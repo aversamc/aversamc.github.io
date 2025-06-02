@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to bottom, #1d0541, #4E1E97);
+      color: white;
+    }
+    .section {
+      padding: 10px 20px; 
+      text-align: center;
+    }
+    .button {
+      display: inline-block;
+      background: linear-gradient(to right, #4E1E97, #024981);
+      padding: 12px 24px;
+      border-radius: 30px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .vip-section {
+      margin-top: 40px;
+    }
+    .vip-cards {
+  display: flex;
+  flex-direction: column; /* <-- questa riga */
+  align-items: center;    /* centra le card */
+  gap: 35px;
+  margin-top: 25px;
+}
+
+    .vip-card-link {
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.15s;
+      border-radius: 18px;
+      box-shadow: 0 6px 24px rgba(20, 6, 40, 0.20);
+      background: #1d0541e6;
+      width: 240px;
+      display: block;
+    }
+    .vip-card-link:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 12px 32px rgba(30, 10, 60, 0.25);
+    }
+    .vip-card-img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 18px 18px 0 0;
+      background: #27124e;
+    }
+    .vip-card-content {
+      padding: 18px 14px 18px 14px;
+    }
+    .vip-card-title {
+      font-size: 1.18em;
+      font-weight: bold;
+      margin: 0 0 7px 0;
+    }
+    .vip-card-desc {
+      font-size: 0.97em;
+      color: #d7c8ff;
+      margin: 0;
+    }
+    /* resto del tuo CSS... */
+    .mode-card, .mode-card2 {
+      display: inline-block;
+      text-align: center;
+      background: transparent;
+      border-radius: 20px;
+      width: 600px;
+      padding: 20px;
+    }
+    .mode-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    footer {
+      background: #37097c;
+      padding: 20px;
+      text-align: center;
+    }
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .image-container, .image-container2 {
+      position: relative;
+      overflow: hidden;
+    }
+    .image-container img {
+      width: 100%;
+      display: block;
+      border-radius: 50px;
+    }
+    .image-container2 img {
+      width: 100%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  
+  
+  <!-- SEZIONE VIP -->
+  <div class="section vip-section">
+    <h2>VIP</h2>
+    <p>Sostieni il server e sblocca vantaggi esclusivi!</p>
+    <div class="vip-cards">
+      <!-- VIP 1 -->
+      <a class="vip-card-link" href="vip1.html">
+        <img class="vip-card-img" src="vip1.png" alt="VIP 1">
+        <div class="vip-card-content">
+          <div class="vip-card-title">VIP 1</div>
+          <div class="vip-card-desc">Rank base con funzioni premium come kit giornaliero, colori e accesso a nuove aree.</div>
+        </div>
+      </a>
+      <!-- VIP 2 -->
+      <a class="vip-card-link" href="vip2.html">
+        <img class="vip-card-img" src="vip2.png" alt="VIP 2">
+        <div class="vip-card-content">
+          <div class="vip-card-title">VIP 2</div>
+          <div class="vip-card-desc">Include tutti i vantaggi del VIP 1 più fly, nickname personalizzato, priorità nelle code e altro.</div>
+        </div>
+      </a>
+      <!-- VIP 3 -->
+      <a class="vip-card-link" href="vip3.html">
+        <img class="vip-card-img" src="vip3.png" alt="VIP 3">
+        <div class="vip-card-content">
+          <div class="vip-card-title">VIP 3</div>
+          <div class="vip-card-desc">Il massimo! Accesso esclusivo, kit potenziato, gadget rari, supporto diretto e altro ancora.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- /SEZIONE VIP -->
+
+</body>
+</html>
